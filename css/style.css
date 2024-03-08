@@ -17,7 +17,6 @@ body {
   letter-spacing: -0.025em;
   z-index: 2;
   opacity: 1;
-  text-shadow: 0 0 0.5em #00000082;
   mix-blend-mode: lighten;
   display: block;
   font-size: 15vmin;
