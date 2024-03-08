@@ -34,8 +34,8 @@ body {
   width: 100%;
   -webkit-animation: rotateHue infinite 20s linear;
   animation: rotateHue infinite 20s linear;
-  -webkit-animation-delay: 0.25s;
-  animation-delay: 0.25s;
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
 }
 @-webkit-keyframes rotateHue {
   0% {
