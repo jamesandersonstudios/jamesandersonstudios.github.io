@@ -355,6 +355,8 @@ body {
   z-index: -1;
   -webkit-animation: bgInOut 5s infinite;
   animation: bgInOut 5s infinite;
+  /* Fallback to blurred placeholder image */
+  background-image: url("../images/placeholder-blur.jpg"); /* Path to your blurred placeholder image */
 }
 @-webkit-keyframes bgInOut {
   0% {
