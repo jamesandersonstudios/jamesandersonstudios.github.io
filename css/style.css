@@ -5,37 +5,36 @@ body {
   overflow: hidden;
 }
 
+.logo {
+  width: auto; /* Allow the width to adjust automatically */
+  max-width: 8vmin; /* Limit the maximum width to 30% of the container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
 .meName {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
-  color: white;
-  font-family: "Arial", sans-serif;
+  color: #fff;
+  font-family: Roboto, sans-serif;
   line-height: 0.8;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.0025em;
   z-index: 2;
   opacity: 1;
+  text-shadow: 0 0 0.5em rgba(179, 64, 26, 0.25);
   mix-blend-mode: lighten;
   display: block;
   font-size: 15vmin;
 }
-
-.logo {
-  width: auto; /* Allow the width to adjust automatically */
-  max-width: 8vmin; /* Limit the maximum width to 30% of the container */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
-}
-
 .untitled {
   position: absolute;
   height: 100%;
   width: 100%;
   -webkit-animation: rotateHue infinite 20s linear;
   animation: rotateHue infinite 20s linear;
-  -webkit-animation-delay: 1.25s;
-  animation-delay: 1.25s;
+  -webkit-animation-delay: 0.625s;
+  animation-delay: 0.625s;
 }
 @-webkit-keyframes rotateHue {
   0% {
@@ -153,7 +152,7 @@ body {
   left: 50%;
   -webkit-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
-  background-color: #1a55b3;
+  background-color: #b3401a;
   pointer-events: auto;
 }
 .untitled__shutters:before {
@@ -268,7 +267,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #1a55b3;
+  background-color: #b3401a;
+  animation: rotateSlides 20s infinite;
 }
 .untitled__slide {
   position: absolute;
@@ -317,14 +317,14 @@ body {
   animation-delay: 0s;
 }
 .untitled__slide:nth-child(1) .untitled__slideBg {
-  background-image: url(../images/moon.webp);
+  background-image: url(../images/moon.jpg);
 }
 .untitled__slide:nth-child(2) {
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
 }
 .untitled__slide:nth-child(2) .untitled__slideBg {
-  background-image: url(../images/rome.jpg);
+  background-image: url(../images/image6.jpg);
 }
 .untitled__slide:nth-child(3) {
   -webkit-animation-delay: 10s;
@@ -338,50 +338,9 @@ body {
   animation-delay: 15s;
 }
 .untitled__slide:nth-child(4) .untitled__slideBg {
-  background-image: url(../images/alley.jpg);
+  background-image: url(../images/image5.jpg);
 }
-.untitled__slide:nth-child(5) {
-  -webkit-animation-delay: 20s;
-  animation-delay: 20s;
-}
-.untitled__slide:nth-child(5) .untitled__slideBg {
-  background-image: url(../images/farm.webp);
-}
-.untitled__slide:nth-child(6) {
-  -webkit-animation-delay: 25s;
-  animation-delay: 25s;
-}
-.untitled__slide:nth-child(6) .untitled__slideBg {
-  background-image: url(../images/houseran.webp);
-}
-.untitled__slide:nth-child(7) {
-  -webkit-animation-delay: 30s;
-  animation-delay: 20s;
-}
-.untitled__slide:nth-child(7) .untitled__slideBg {
-  background-image: url(../images/space.jpg);
-}
-.untitled__slide:nth-child(8) {
-  -webkit-animation-delay: 35s;
-  animation-delay: 35s;
-}
-.untitled__slide:nth-child(8) .untitled__slideBg {
-  background-image: url(../images/river.webp);
-}
-.untitled__slide:nth-child(9) {
-  -webkit-animation-delay: 40s;
-  animation-delay: 40s;
-}
-.untitled__slide:nth-child(9) .untitled__slideBg {
-  background-image: url(../images/mel.webp);
-}
-.untitled__slide:nth-child(10) {
-  -webkit-animation-delay: 45s;
-  animation-delay: 45s;
-}
-.untitled__slide:nth-child(10) .untitled__slideBg {
-  background-image: url(../images/parrot.webp);
-}
+
 .untitled__slideBg {
   position: relative;
   height: 100%;
@@ -390,7 +349,7 @@ body {
   left: 0;
   background-size: cover;
   background-position: center;
-  background-color: #1a55b3;
+  background-color: #b3401a;
   background-blend-mode: hard-light;
   opacity: 1;
   z-index: -1;
@@ -449,33 +408,21 @@ body {
     transform: rotate(45deg) scale(0.9);
   }
 }
-
-.untitled__slideBg::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(images/favicon.png); /* Replace 'images/favicon.png' with your favicon path */
-  mix-blend-mode: overlay; /* Blend mode to overlay favicon with changing colors */
-}
-
 .button {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: roboto mono, sans-serif;
   text-decoration: none;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 2vmin;
   display: inline-block;
   position: relative;
-  border: 3px solid white;
+  border: 3px solid #fff;
   box-shadow: -0.5vmin 0.5vmin 0 rgba(255, 255, 255, 0.5);
-  background: transparent;
+  background: 0 0;
   margin-top: 5vmin;
   mix-blend-mode: lighten;
-  color: white;
-  padding: 2vmin 2vmin 1.8vmin 2vmin;
+  color: #fff;
+  padding: 2vmin 2vmin 1.8vmin;
   letter-spacing: 0.1em;
   text-shadow: none;
   line-height: 1;
@@ -488,11 +435,11 @@ body {
   -webkit-transform: translate3d(1vmin, -1vmin, 0);
   transform: translate3d(1vmin, -1vmin, 0);
   box-shadow: -1vmin 1vmin 0 rgba(255, 255, 255, 0.5);
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
 }
 .button:active {
   -webkit-transform: translate3d(0px, 0px, 0);
   transform: translate3d(0px, 0px, 0);
-  box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
 }
