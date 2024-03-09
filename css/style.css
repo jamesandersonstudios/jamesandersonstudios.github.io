@@ -17,7 +17,7 @@ body {
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
   color: #fff;
-  font-family: Roboto, sans-serif;
+  font-family: "Abril Fatface", sans-serif;
   line-height: 0.8;
   letter-spacing: -0.0025em;
   z-index: 2;
@@ -409,7 +409,7 @@ body {
   }
 }
 .button {
-  font-family: roboto mono, sans-serif;
+  font-family: "Abril Fatface", sans-serif;
   text-decoration: none;
   font-weight: 800;
   text-transform: uppercase;
