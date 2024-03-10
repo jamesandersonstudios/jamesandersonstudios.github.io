@@ -4,7 +4,6 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
 .logo {
   width: auto; /* Allow the width to adjust automatically */
   max-width: 8vmin; /* Limit the maximum width to 30% of the container */
