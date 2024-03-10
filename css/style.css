@@ -331,7 +331,7 @@ body {
   animation-delay: 10s;
 }
 .untitled__slide:nth-child(3) .untitled__slideBg {
-  background-image: url(../images/snow.jpg);
+  background-image: url(../images/metro.jpg);
 }
 .untitled__slide:nth-child(4) {
   -webkit-animation-delay: 15s;
