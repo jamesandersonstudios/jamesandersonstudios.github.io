@@ -5,10 +5,14 @@ body {
   overflow: hidden;
 }
 .logo {
+  position: relative; /* Change position to relative */
+  top: 7px; /* Adjust the distance from the top */
+  right: 10px; /* Adjust the distance from the left */
   width: auto; /* Allow the width to adjust automatically */
   max-width: 8vmin; /* Limit the maximum width to 30% of the container */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
 }
+
 .meName {
   position: absolute;
   top: 50%;
