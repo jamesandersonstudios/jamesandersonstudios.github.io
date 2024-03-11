@@ -12,7 +12,6 @@ body {
   max-width: 8vmin; /* Limit the maximum width to 30% of the container */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
 }
-
 .meName {
   position: absolute;
   top: 50%;
@@ -343,7 +342,6 @@ body {
 .untitled__slide:nth-child(4) .untitled__slideBg {
   background-image: url(../images/image5.jpg);
 }
-
 .untitled__slideBg {
   position: relative;
   height: 100%;
