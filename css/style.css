@@ -316,28 +316,28 @@ body {
   animation-delay: 0s;
 }
 .untitled__slide:nth-child(1) .untitled__slideBg {
-  background-image: url(../images/moon.jpg);
+  background-image: url(../images/image1.jpg);
 }
 .untitled__slide:nth-child(2) {
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
 }
 .untitled__slide:nth-child(2) .untitled__slideBg {
-  background-image: url(../images/image6.jpg);
+  background-image: url(../images/image2.jpg);
 }
 .untitled__slide:nth-child(3) {
   -webkit-animation-delay: 10s;
   animation-delay: 10s;
 }
 .untitled__slide:nth-child(3) .untitled__slideBg {
-  background-image: url(../images/metro.jpg);
+  background-image: url(../images/image3.jpg);
 }
 .untitled__slide:nth-child(4) {
   -webkit-animation-delay: 15s;
   animation-delay: 15s;
 }
 .untitled__slide:nth-child(4) .untitled__slideBg {
-  background-image: url(../images/image5.jpg);
+  background-image: url(../images/image4.jpg);
 }
 .untitled__slideBg {
   position: relative;
