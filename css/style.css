@@ -274,8 +274,8 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-animation: showHideSlide infinite 55s steps(2);
-  animation: showHideSlide infinite 55s steps(2);
+  -webkit-animation: showHideSlide infinite 60s steps(3);
+  animation: showHideSlide infinite 60s steps(3);
 }
 @-webkit-keyframes showHideSlide {
   0% {
@@ -387,6 +387,13 @@ body {
 }
 .untitled__slide:nth-child(11) .untitled__slideBg {
   background-image: url(../images/image11.jpg);
+}
+.untitled__slide:nth-child(12) {
+  -webkit-animation-delay: 55s;
+  animation-delay: 55s;
+}
+.untitled__slide:nth-child(12) .untitled__slideBg {
+  background-image: url(../images/image12.jpg);
 }
 .untitled__slideBg {
   position: relative;
