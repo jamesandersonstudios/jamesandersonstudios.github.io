@@ -48,56 +48,29 @@
             <div class="untitled__slide">
                 <div class="untitled__slideBg"></div>
             </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+            </div>
             <div class="untitled__shutters"></div>
         </div>
-        <script>
-            // Generate image URLs
-            var lowResImages = [];
-            var highResImages = [];
-            for (var i = 1; i <= 11; i++) {
-                lowResImages.push("images/image" + i + "low.jpg");
-                highResImages.push("images/image" + i + ".jpg");
-            }
-
-            // Counter to keep track of the current image
-            var currentImageIndex = 0;
-
-            // Function to update the background image of the slides
-            function updateBackgroundImage() {
-                var slides = document.querySelectorAll('.untitled__slideBg');
-                slides.forEach(function (slide) {
-                    slide.style.backgroundImage = 'url("' + highResImages[currentImageIndex] + '")';
-                });
-            }
-
-            // Function to advance to the next image
-            function nextImage() {
-                currentImageIndex = (currentImageIndex + 1) % highResImages.length;
-                updateBackgroundImage();
-            }
-
-            // Initial call to set the background image with low-resolution image
-            function preloadImages(urls, allImagesLoadedCallback) {
-                var loadedCounter = 0;
-                urls.forEach(function (url) {
-                    var img = new Image();
-                    img.onload = function () {
-                        loadedCounter++;
-                        if (loadedCounter == urls.length) {
-                            allImagesLoadedCallback();
-                        }
-                    };
-                    img.src = url;
-                });
-            }
-
-            preloadImages(lowResImages, function () {
-                updateBackgroundImage(); // Once all low-res images are preloaded, update to the high-res version
-                // Automatically advance to the next image every 5 seconds (adjust as needed)
-                setInterval(nextImage, 5000);
-            });
-        </script>
-
 </body>
 
 </html>
