@@ -102,61 +102,91 @@
                 </div>
 
                 <!-- JavaScript to preload images and start animation -->
-                <script>
-                    // Generate image URLs
-                    var images = [];
-                    for (var i = 1; i <= 99; i++) {
-                        images.push("images/image" + i + ".jpg");
-                    }
+                <!DOCTYPE html>
+                <html lang="en">
 
-                    // Counter to keep track of the current image
-                    var currentImageIndex = 0;
+                <head>
+                    <meta charset="UTF-8">
+                    <title>James Anderson</title>
+                    <!-- Your meta tags and stylesheets -->
+                    <style>
+                        .untitled__slideBg {
+                            transition: background-image 1s ease-in-out;
+                        }
+                    </style>
+                </head>
 
-                    // Function to preload images
-                    function preloadImages() {
-                        var loadedImages = 0;
-                        images.forEach(function (imageUrl) {
-                            var img = new Image();
-                            img.onload = function () {
-                                loadedImages++;
-                                if (loadedImages === images.length) {
-                                    startAnimation();
-                                }
-                            };
-                            img.src = imageUrl;
-                        });
-                    }
+                <body>
+                    <!-- Your existing HTML structure -->
+                    <div class="meName">
+                        <!-- Content -->
+                    </div>
+                    <div class="untitled">
+                        <div class="untitled__slides">
+                            <!-- Your existing slides -->
+                        </div>
+                    </div>
 
-                    // Function to start the animation
-                    function startAnimation() {
-                        // Update the background image initially
-                        updateBackgroundImage();
+                    <!-- JavaScript to preload images and start animation -->
+                    <script>
+                        // Generate image URLs
+                        var images = [];
+                        for (var i = 1; i <= 99; i++) {
+                            images.push("images/image" + i + ".jpg");
+                        }
 
-                        // Automatically advance to the next image every 5 seconds (adjust as needed)
-                        setInterval(nextImage, 5000);
-                    }
+                        // Counter to keep track of the current image
+                        var currentImageIndex = 0;
 
-                    // Function to update the background image of the slides with a smooth transition
-                    function updateBackgroundImage() {
-                        var slides = document.querySelectorAll('.untitled__slideBg');
-                        slides.forEach(function (slide) {
-                            slide.style.opacity = 0; // Fade out the current image
-                            setTimeout(function () {
-                                slide.style.backgroundImage = 'url("' + images[currentImageIndex] + '")'; // Set the new image
-                                slide.style.opacity = 1; // Fade in the new image
-                            }, 500); // Wait for 500ms for the fade out effect to complete
-                        });
-                    }
+                        // Function to preload images
+                        function preloadImages() {
+                            var loadedImages = 0;
+                            images.forEach(function (imageUrl) {
+                                var img = new Image();
+                                img.onload = function () {
+                                    loadedImages++;
+                                    if (loadedImages === images.length) {
+                                        startAnimation();
+                                    }
+                                };
+                                img.src = imageUrl;
+                            });
+                        }
 
-                    // Function to advance to the next image
-                    function nextImage() {
-                        currentImageIndex = (currentImageIndex + 1) % images.length;
-                        updateBackgroundImage();
-                    }
+                        // Function to start the animation
+                        function startAnimation() {
+                            // Update the background image initially
+                            updateBackgroundImage();
 
-                    // Preload images before starting the animation
-                    preloadImages();
-                </script>
+                            // Automatically advance to the next image every 5 seconds (adjust as needed)
+                            setInterval(nextImage, 5000);
+                        }
+
+                        // Function to update the background image of the slides with a smooth transition
+                        function updateBackgroundImage() {
+                            var slides = document.querySelectorAll('.untitled__slideBg');
+                            slides.forEach(function (slide) {
+                                slide.style.opacity = 0; // Fade out the current image
+                                setTimeout(function () {
+                                    slide.style.backgroundImage = 'url("' + images[currentImageIndex] + '")'; // Set the new image
+                                    slide.style.opacity = 1; // Fade in the new image
+                                }, 500); // Wait for 500ms for the fade out effect to complete
+                            });
+                        }
+
+                        // Function to advance to the next image
+                        function nextImage() {
+                            currentImageIndex = (currentImageIndex + 1) % images.length;
+                            updateBackgroundImage();
+                        }
+
+                        // Preload images before starting the animation
+                        preloadImages();
+                    </script>
+                </body>
+
+                </html>
+
             </body>
 
             </html>
