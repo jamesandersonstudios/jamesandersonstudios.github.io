@@ -316,6 +316,16 @@ body {
   animation-delay: 0s;
 }
 .untitled__slide:nth-child(1) .untitled__slideBg {
+  background-image: url(../images/image1low.jpg); /* Placeholder image */
+}
+.loaded {
+  background-image: none;
+}
+[data-src] {
+  display: none;
+}
+[data-src].loaded {
+  display: block; /* Show when loaded */
   background-image: url(../images/image1.jpg);
 }
 .untitled__slide:nth-child(2) {
