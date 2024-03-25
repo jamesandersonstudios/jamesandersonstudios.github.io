@@ -268,7 +268,6 @@ body {
   left: 0;
   background-color: #b3401a;
   animation: rotateSlides 20s infinite;
-  animation-play-state: paused;
 }
 .untitled__slide {
   position: absolute;
