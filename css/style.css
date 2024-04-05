@@ -5,9 +5,9 @@ body {
   overflow: hidden;
 }
 .logo {
-  width: auto; /* Allow the width to adjust automatically */
+  width: 20%; /* Allow the width to adjust automatically */
   max-width: 8vmin; /* Limit the maximum width to 30% of the container */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  height: 20%; /* Automatically adjust the height to maintain aspect ratio */
 }
 .meName {
   position: absolute;
